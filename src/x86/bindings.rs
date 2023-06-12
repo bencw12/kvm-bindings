@@ -4043,7 +4043,7 @@ fn bindgen_test_layout_kvm_debugregs() {
     );
 }
 #[repr(C)]
-#[derive(Debug, Versionize)]
+#[derive(Debug, Clone, Versionize)]
 pub struct kvm_xsave {
     pub region: [__u32; 1024usize],
     pub extra: __IncompleteArrayField<__u32>,
